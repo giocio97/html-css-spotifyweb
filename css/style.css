@@ -26,7 +26,7 @@ main a{
 }
 main ul li{
     list-style-type: none;
-    margin-bottom: 10px;
+   
     }
 
     /* menù laterale sx */
@@ -42,7 +42,7 @@ main nav{
 }
 #logoxl{
     object-fit: cover;
-    margin: 20px 0;
+    margin-top: 20px;
    
 }
 main nav ul li a {
@@ -52,15 +52,14 @@ main nav ul li a {
     align-items:center;
     justify-content: flex-end;
     width: 100%;
-    min-height: 20px;
-    
-    
-
-    
+    margin-bottom: -130px;
+        
     
 }
+
  main nav ul li a img{
     scale: 0.2;
+    margin-right: -50px;
 }
 
 
@@ -68,6 +67,9 @@ main nav ul li a {
 
             /* playlist */
 
+#playlist-text{
+    padding-top: 100px;
+}
 #action-playlist{
     margin: 15px 0;
 }
@@ -85,15 +87,12 @@ height: 30px;
     margin-left: 5px;
    
 }
+#playlist li{
+    margin-bottom: 10px;
+}
 
 
-            /* bottom-menu */
 
-/* #bottom-menu{
-    display: flex;
-    justify-content: flex-end;
-    align-items:flex-end;
-} */
 
 #installer{
     font-size: 15px;
@@ -116,9 +115,9 @@ padding: 5px;
     /* intestazione di upgrade */
 
 #upgrade{
-    width: 85%;
+    
     height: 80px;
-    background-color: #000000d9;
+    background-color: #080b12ee;
     display: flex;
     justify-content: right;
     
@@ -132,6 +131,11 @@ padding: 5px;
     border-radius: 20px;
     margin: 20px;
     font-size: 12px;
+}
+
+#corpo-centrale{
+    width: 85%;
+    background-color: #141922;
 }
 
 
