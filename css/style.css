@@ -6,6 +6,7 @@
 }
 body{
     color: rgb(159, 159, 159);
+    font-family: 'Montserrat', sans-serif;
 }
 h4{
     color: white;
@@ -39,6 +40,26 @@ main nav{
     margin: 20px 0;
    
 }
+main nav ul li a {
+    
+    display: flex;
+    font-size: 14px;
+    align-items:center;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 20px;
+    
+    
+
+    
+    
+}
+ main nav ul li a img{
+    scale: 0.2;
+}
+
+
+
 
             /* playlist */
 
