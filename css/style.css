@@ -5,8 +5,12 @@
 
 }
 body{
+    color: rgb(159, 159, 159);
+}
+h4{
     color: white;
 }
+
 
 main a{
     text-decoration:  none;
@@ -22,19 +26,21 @@ main ul li{
     /* menù laterale sx */
 main nav{
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-between;
     flex-direction: column;
     align-items:flex-start;
     background-color: #000000;
-    width: 20%;
+    max-width: 15%;
+    height: 100vh;
     padding: 0 10px;
 }
 #logoxl{
-    object-fit: contain;
-    scale: 0.9;
-    margin-bottom: 20px;
+    object-fit: cover;
+    margin: 20px 0;
    
 }
+
+            /* playlist */
 
 #action-playlist{
     margin: 15px 0;
@@ -49,13 +55,34 @@ width: 30px;
 height: 30px;
 }
 
-#creaplay{
+#crea-play{
     margin-left: 5px;
-    color: rgb(159, 159, 159);
+   
 }
 
-#playlist{
-    color: rgb(159, 159, 159);
+
+            /* bottom-menu */
+
+/* #bottom-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+} */
+
+#installer{
+    font-size: 15px;
+    padding: 10px 0;
+   
 }
 
- 
+#profilo-utente{
+    color: white;
+    font-size: 18px;
+    padding: 10px 0;
+    border-top: 1px solid rgb(179, 179, 179) ;
+}
+#profilo-utente #user{
+background-color:rgb(179, 179, 179) ;
+border-radius: 50%;
+padding: 5px;
+}
