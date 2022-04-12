@@ -154,7 +154,8 @@ padding: 5px;
         /* footer */
 footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 250px;;
     height: 80px;
     background-color: #282828;
     align-items: center;
@@ -182,11 +183,37 @@ footer img{
     
 }
 
-/* #riproduzione-brani {
+#riproduzione-brani {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: 20px;
+   
 
-} */
+}
+
+.barra-brano{
+    border: 2px solid grey;
+    border-radius: 2px;
+    display: inline-block;
+    width: 400px ;
+    height: 2px;
+}
+
+.timing{
+
+    margin: 0 5px;
+    color: white;
+    font-size: 10px;
+}
+
+.barra-volume{
+    border: 2px solid grey;
+    border-radius: 2px;
+    display: inline-block;
+    width: 100px ;
+    height: 2px;
+}
+
 
 
 
