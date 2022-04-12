@@ -147,6 +147,11 @@ padding: 5px;
     
     background-color: #141922;
 }
+#intestazione{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+}
 
 
 
