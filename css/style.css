@@ -157,24 +157,25 @@ footer{
     justify-content: space-between;
     height: 80px;
     background-color: #282828;
+    align-items: center;
 }
 
 footer img{
    width: 50px;
    height: 50px;
-   margin-right: -100px;
+   
    
    
 }
 
-/* #brano-play{
+#brano-play{
     display: flex;
     justify-content: space-around;
     align-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
     
-} */
+}
 
 #brano-play div{
     font-size: 12px;
