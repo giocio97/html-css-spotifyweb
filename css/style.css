@@ -45,21 +45,25 @@ main nav{
     margin-top: 20px;
    
 }
-main nav ul li a {
+main nav #menu-sx li a {
     
     display: flex;
     font-size: 14px;
     align-items:center;
-    justify-content: flex-end;
-    width: 100%;
-    margin-bottom: -130px;
-        
+    justify-content:flex-start;
+    align-content: flex-start;
+    
+       
+}
+main nav #menu-sx li {
+    display: flex;
     
 }
 
+
  main nav ul li a img{
-    scale: 0.2;
-    margin-right: -50px;
+    scale: 0.4 ;
+   
 }
 
 
@@ -68,7 +72,7 @@ main nav ul li a {
             /* playlist */
 
 #playlist-text{
-    padding-top: 100px;
+    padding-top: 10px;
 }
 #action-playlist{
     margin: 15px 0;
