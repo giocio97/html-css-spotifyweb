@@ -15,11 +15,11 @@ h4{
 main{
     display: flex;
     flex-wrap: wrap;
-    height:calc(100vh -80px);
+    height: calc( 100vh - 80px);
     
 }
 
-main a{
+ a{
     text-decoration:  none;
     color: white;
     
@@ -37,12 +37,12 @@ main nav{
     flex-direction: column;
     align-items:flex-start;
     background-color: #000000;
-    width: 15%;
+    width: 200px;
     padding: 0 10px;
 }
 #logoxl{
     object-fit: cover;
-    margin-top: 20px;
+    margin: 20px 0;
    
 }
 main nav #menu-sx li a {
@@ -52,17 +52,21 @@ main nav #menu-sx li a {
     align-items:center;
     justify-content:flex-start;
     align-content: flex-start;
+    color: rgb(159, 159, 159);
     
        
 }
 main nav #menu-sx li {
     display: flex;
+    justify-items: flex-start;
+   
     
 }
 
 
  main nav ul li a img{
-    scale: 0.4 ;
+    width: 30px;
+    height: 30px;
    
 }
 
@@ -72,7 +76,7 @@ main nav #menu-sx li {
             /* playlist */
 
 #playlist-text{
-    padding-top: 10px;
+    padding-top: 20px;
 }
 #action-playlist{
     margin: 15px 0;
@@ -139,7 +143,7 @@ padding: 5px;
 }
 
 #corpo-centrale{
-    width: 85%;
+    width: calc( 100vw - 200px);
     
     background-color: #141922;
 }
@@ -151,27 +155,37 @@ padding: 5px;
 footer{
     display: flex;
     justify-content: space-between;
-height: 80px;
-background-color: #282828;
+    height: 80px;
+    background-color: #282828;
 }
 
 footer img{
-   scale: 0.2;
+   width: 50px;
+   height: 50px;
    margin-right: -100px;
+   
    
 }
 
-#brano-play{
+/* #brano-play{
     display: flex;
     justify-content: space-around;
     align-content: flex-start;
     align-items: center;
     gap: 10px;
     
-}
+} */
+
 #brano-play div{
     font-size: 12px;
     
 }
+
+/* #riproduzione-brani {
+    display: flex;
+    justify-content: space-between;
+
+} */
+
 
 
