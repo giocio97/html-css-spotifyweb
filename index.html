@@ -17,7 +17,7 @@
     <!-- corpo -->
     <main>
             <!-- menù laterale sx logo e playlist -->
-        <nav>
+        <section id="menu">
            <div>
                 <img id="logoxl" src="img/logo.svg" alt="logo">
                 <ul id="menu-sx">
@@ -50,6 +50,8 @@
                     <span id="crea-play" >Crea playlist</span>
                     </div>
                </div>
+
+              <div>
                 <ul id="playlist">
                     <li>Nome playlist</li>
                     <li>Nome playlist</li>
@@ -60,12 +62,13 @@
                     <li>Nome playlist</li>
                     <li>Nome playlist</li>
                 </ul>
+              </div>
            </div>
 
                
            
                     <!-- bottom-menu  -->
-            <div>
+            <div id=" bottom-menu">
                 <div id="installer">
                     <i class="far fa-arrow-alt-circle-down"></i>
                     <span>Installa app</span>
@@ -81,17 +84,18 @@
             </div>
            
             
-        </nav>
+        </section>
         
        
-        
-        <div id="corpo-centrale">
-            <div id="upgrade">
+                    
+        <section id="corpo-centrale">
+                    <!-- barra upgrade -->
+            <d                            iv id="upgrade">
                 <a id="link-upgrade" href="#">
                  <span>EFFETTUA L'UPGRADE</span>    
                  </a>
-             </div>
-
+            </d>
+                    <!-- barra intestazione -->
              <div>
                  <ul id="intestazione">
                      <li><a href="#">IN EVIDENZA</a></li>
@@ -102,8 +106,81 @@
                      <li><a href="#"> SCOPRI</a></li>
                  </ul>
              </div>
+                <!-- parte centrale -->
+                <div id="contenuto-principale">
+                    <h3>Recently Played</h3>
+                    <div class="copertine-brani">
+                        <div class="brano">
+                            <img src="img/metal_lifting.jpg" alt="metal">
+                            <h4>Heavy Metal</h4>
+                            <span>subtitle</span>
+                        </div>
+
+                        <div class="brano">
+                            <img src="img/stranger.jpeg" alt="stranger">
+                            <h4>Stranger Things, Vol. 1 <br> (a Netflix original <br> series soundtrack) </h4>
+                            <span>Kile Dixon e Micheal Stein</span>
+                        </div>
+
+                        <div class="brano">
+                            <img src="img/aquietplace.jpeg" alt="aquietplace">
+                            <h4> A quiet Place</h4>
+                            <span>subtitle</span>
+                        </div>
+
+                        <div class="brano">
+                            <img src="img/split.jpeg" alt="split">
+                            <h4>Split</h4>
+                            <span>subtitle</span>
+                        </div>
+
+                        <div class="brano">
+                            <img src="img/cure.jpeg" alt="cure">
+                            <h4>A cure for wellness</h4>
+                            <span>subtitle</span>
+                        </div>
+
+                        <div class="brano">
+                            <img src="img/sinister.jpeg" alt="sinister">
+                            <h4>Sinister</h4>
+                            <span>subtitle</span>
+                        </div>
+
+                       
+                    </div>
+
+                    <h3>Creato per John Doe</h3>
+                    <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                    <div class="copertine-brani">
+                        <div>
+                            <img src="img/radar.jpeg" alt="radar">
+                            <h4> Release Radar</h4>
+                        </div>
+
+                        <div>
+                            <img src="img/mixdaily.jpeg" alt="mixdaily">
+                            <h4> Daily Mix 1</h4>
+                        </div>
+                    </div>
+
+                    <h3>Artisti più popolari</h3>
+                    <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                    <div class="copertine-brani">
+                        <div>
+                            <img class="cerchio" src="img/youg.jpeg" alt="young">
+                            <h4> Lana del Rey</h4>
+                        </div>
+
+                        <div>
+                            <img class="cerchio" src="img/einaudi.jpeg" alt="einaudi">
+                            <h4> Ludovico Enaudi</h4>
+                        </div>
+                    </div>
+
+
+                </div>
             
-        </div>
+        </section>
            
     </main>
     <footer>

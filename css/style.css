@@ -8,7 +8,7 @@ body{
     color: rgb(159, 159, 159);
     font-family: 'Montserrat', sans-serif;
 }
-h4{
+h4, h3{
     color: white;
 }
 
@@ -31,7 +31,7 @@ main ul li{
     }
 
     /* menù laterale sx */
-main nav{
+main #menu{
     display: flex;
     justify-content:space-between;
     flex-direction: column;
@@ -39,13 +39,14 @@ main nav{
     background-color: #000000;
     width: 200px;
     padding: 0 10px;
+    height:calc( 100vh - 80px);
 }
 #logoxl{
     object-fit: cover;
     margin: 20px 0;
    
 }
-main nav #menu-sx li a {
+main #menu #menu-sx li a {
     
     display: flex;
     font-size: 14px;
@@ -56,7 +57,7 @@ main nav #menu-sx li a {
     
        
 }
-main nav #menu-sx li {
+main #menu #menu-sx li {
     display: flex;
     justify-items: flex-start;
    
@@ -64,16 +65,25 @@ main nav #menu-sx li {
 }
 
 
- main nav ul li a img{
+ main #menu ul li a img{
     width: 30px;
     height: 30px;
    
+}
+
+#bottom-menu{
+    height: 180px;
 }
 
 
 
 
             /* playlist */
+
+#playlist{
+    height: 300px;
+    overflow-y: auto;
+}
 
 #playlist-text{
     padding-top: 20px;
@@ -146,13 +156,48 @@ padding: 5px;
     width: calc( 100vw - 200px);
     
     background-color: #141922;
+    overflow-y: auto;
+    height: 100%;
 }
+
+
 #intestazione{
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items:center;
     align-content: center;
 
+}
+
+#contenuto-principale{
+    padding: 50px  20px ;
+}
+
+#contenuto-principale img{
+    width: 150px;
+    height: 150px;
+}
+
+.copertine-brani{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contenuto-principale h3{
+    margin: 20px 0;
+}
+
+.brano{
+    text-align: center;
+}
+
+.cerchio{
+    border-radius: 50%;
 }
 
 
@@ -217,7 +262,7 @@ footer img{
     border: 2px solid grey;
     border-radius: 2px;
     display: inline-block;
-    width: 100px ;
+    width: 80px ;
     height: 2px;
 }
 
