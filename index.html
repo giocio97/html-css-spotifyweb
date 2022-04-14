@@ -21,7 +21,7 @@
            <div>
                 <img id="logoxl" src="img/logo.svg" alt="logo">
                 <ul id="menu-sx">
-                    <li>
+                    <li id="home">
                         <a href="#">
                            <img src="img/home.svg" alt="home">
                             <span>Home</span> 
@@ -46,21 +46,22 @@
                <div>
                     <h4 id="playlist-text">PLAYLIST</h4>
                     <div id="action-playlist" >
-                    <i id="plus-playlist" class="fas fa-plus"></i>
-                    <span id="crea-play" >Crea playlist</span>
+                    <a href="#">
+                        <i id="plus-playlist" class="fas fa-plus"></i>
+                        <span id="crea-play" >Crea playlist</span>
+                    </a>
                     </div>
                </div>
 
               <div>
                 <ul id="playlist">
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
+                    <li> <a href="#">Nome playlist</a> </li>
+                    <li> <a href="#">Nome playlist</a> </li>
+                    <li> <a href="#">Nome playlist</a> </li>
+                    <li> <a href="#">Nome playlist</a> </li>
+                    <li> <a href="#">Nome playlist</a> </li>
+                    <li> <a href="#">Nome playlist</a> </li>
+                    <li> <a href="#">Nome playlist</a> </li>                    
                 </ul>
               </div>
            </div>
@@ -70,8 +71,11 @@
                     <!-- bottom-menu  -->
             <div id=" bottom-menu">
                 <div id="installer">
-                    <i class="far fa-arrow-alt-circle-down"></i>
-                    <span>Installa app</span>
+                    <a href="">
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                        <span>Installa app</span>
+                    </a>
+                   
                 </div>
                 
                 <div id="profilo-utente">
@@ -90,15 +94,15 @@
                     
         <section id="corpo-centrale">
                     <!-- barra upgrade -->
-            <d                            iv id="upgrade">
+            <div id="upgrade">
                 <a id="link-upgrade" href="#">
                  <span>EFFETTUA L'UPGRADE</span>    
                  </a>
-            </d>
+            </div>
                     <!-- barra intestazione -->
              <div>
                  <ul id="intestazione">
-                     <li><a href="#">IN EVIDENZA</a></li>
+                     <li id="evidenza"><a href="#">IN EVIDENZA</a></li>
                      <li><a href="#"> PODCAST </a></li>
                      <li><a href="#">CLASSIFICHE</a></li>
                      <li><a href="#">GENERALI E MOOD </a></li>
@@ -111,37 +115,72 @@
                     <h3>Recently Played</h3>
                     <div class="copertine-brani">
                         <div class="brano">
-                            <img src="img/metal_lifting.jpg" alt="metal">
+                           <div class="cover">
+                                <img  src="img/metal_lifting.jpg" alt="metal">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
                             <h4>Heavy Metal</h4>
-                            <span>subtitle</span>
+                            <span>subtitle</span> 
                         </div>
 
                         <div class="brano">
-                            <img src="img/stranger.jpeg" alt="stranger">
+                            <div class="cover">
+                                <img src="img/stranger.jpeg" alt="stranger">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
+                            
                             <h4>Stranger Things, Vol. 1 <br> (a Netflix original <br> series soundtrack) </h4>
                             <span>Kile Dixon e Micheal Stein</span>
                         </div>
 
                         <div class="brano">
-                            <img src="img/aquietplace.jpeg" alt="aquietplace">
+                            <div class="cover">
+                                <img src="img/aquietplace.jpeg" alt="aquietplace">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
+                            
                             <h4> A quiet Place</h4>
                             <span>subtitle</span>
                         </div>
 
                         <div class="brano">
-                            <img src="img/split.jpeg" alt="split">
+                            <div class="cover">
+                                <img src="img/split.jpeg" alt="split">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
+                            
                             <h4>Split</h4>
                             <span>subtitle</span>
                         </div>
 
                         <div class="brano">
-                            <img src="img/cure.jpeg" alt="cure">
+                            <div class="cover">
+                                <img src="img/cure.jpeg" alt="cure">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
+                            
                             <h4>A cure for wellness</h4>
                             <span>subtitle</span>
                         </div>
 
                         <div class="brano">
-                            <img src="img/sinister.jpeg" alt="sinister">
+                            <div class="cover">
+                                <img src="img/sinister.jpeg" alt="sinister">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
+                            
                             <h4>Sinister</h4>
                             <span>subtitle</span>
                         </div>
@@ -153,12 +192,24 @@
                     <span>Più ascolti, più accurati saranno i suggerimenti</span>
                     <div class="copertine-brani">
                         <div class="brano">
-                            <img src="img/radar.jpeg" alt="radar">
+                            <div class="cover">
+                                <img src="img/radar.jpeg" alt="radar">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
+                            
                             <h4> Release Radar</h4>
                         </div>
 
                         <div class="brano">
-                            <img src="img/mixdaily.jpeg" alt="mixdaily">
+                            <div class="cover">
+                                <img src="img/mixdaily.jpeg" alt="mixdaily">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
+                            
                             <h4> Daily Mix 1</h4>
                         </div>
                     </div>
@@ -167,12 +218,24 @@
                     <span>Più ascolti, più accurati saranno i suggerimenti</span>
                     <div class="copertine-brani">
                         <div class="brano">
-                            <img class="cerchio" src="img/youg.jpeg" alt="young">
+                            <div class="cover">
+                                <img class="cerchio" src="img/youg.jpeg" alt="young">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
+                           
                             <h4> Lana del Rey</h4>
                         </div>
 
                         <div class="brano">
-                            <img class="cerchio" src="img/einaudi.jpeg" alt="einaudi">
+                            <div class="cover">
+                                <img class="cerchio" src="img/einaudi.jpeg" alt="einaudi">
+                                <div class="brano-hover">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                           </div>
+                           
                             <h4> Ludovico Enaudi</h4>
                         </div>
                     </div>
@@ -206,10 +269,12 @@
                 <a href="#"><i class="fas fa-redo-alt"></i></a>
             </div>
             
-            <div>
-                <span class="timing">0:25</span>
-                <div class="barra-brano"></div>
-                <span class="timing">4:35</span>
+            <div id="timing">
+                <span >0:25</span>
+                <div class="barra-brano">
+                    <div></div>
+                </div>
+                <span>4:35</span>
 
             </div>
        </div>
@@ -217,7 +282,9 @@
         <a href="#"><i class="fas fa-list"></i></a>
         <a href="#"><i class="fas fa-desktop"></i></a>
         <a href="#"><i class="fas fa-volume-up"></i></a>
-        <div class="barra-volume"></div>
+        <div class="barra-volume">
+            <div></div>
+        </div>
        
 
    </div>

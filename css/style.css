@@ -21,10 +21,16 @@ main{
 
  a{
     text-decoration:  none;
-    color: white;
+    color: rgb(159, 159, 159);
+    
     
    
 }
+
+a:hover{
+    color: white;
+}
+
 main ul li{
     list-style-type: none;
    
@@ -39,7 +45,7 @@ main #menu{
     background-color: #000000;
     width: 200px;
     padding: 0 10px;
-    height:calc( 100vh - 80px);
+    height: calc( 100vh - 80px);
 }
 #logoxl{
     object-fit: cover;
@@ -53,7 +59,8 @@ main #menu #menu-sx li a {
     align-items:center;
     justify-content:flex-start;
     align-content: flex-start;
-    color: rgb(159, 159, 159);
+    padding: 5px;
+    
     
        
 }
@@ -68,7 +75,17 @@ main #menu #menu-sx li {
  main #menu ul li a img{
     width: 30px;
     height: 30px;
+    
    
+}
+
+#home{
+    border-left: 3px solid rgb(11, 213, 11);
+    border-radius: 2px;
+    
+}
+#home a{
+    color: white;
 }
 
 #bottom-menu{
@@ -115,6 +132,7 @@ height: 30px;
 #installer{
     font-size: 15px;
     padding: 10px 0;
+    
    
 }
 
@@ -150,6 +168,11 @@ padding: 5px;
     margin: 20px;
     font-size: 12px;
     position: fixed;
+    
+}
+
+#link-upgrade:hover{
+    scale: 1.2;
 }
 
 #corpo-centrale{
@@ -171,15 +194,29 @@ padding: 5px;
 
 }
 
+#evidenza{
+    border-bottom: 2px solid rgb(11, 213, 11);
+    border-radius: 2px;
+    padding-bottom: 2px;
+    color: white;
+}
+
 #contenuto-principale{
     padding: 50px  20px ;
 }
 
 #contenuto-principale img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    
 }
 
+/* #contenuto-principale :hover img{
+    filter: opacity(0.5);
+} */
+.cover{
+    position: relative;
+}
 .copertine-brani{
     margin-top: 10px;
     display: flex;
@@ -187,7 +224,7 @@ padding: 5px;
     gap: 10px;
     align-content: space-between;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #contenuto-principale h3{
@@ -197,7 +234,31 @@ padding: 5px;
 
 .brano{
     text-align: center;
+    
 }
+.brano-hover{
+    position: absolute;
+    right: 75px;
+    top: 75px;
+    font-size: 50px;
+    color: white;
+    display: none;
+    
+}
+.cover:hover .brano-hover{
+    display: block;
+   
+}
+.brano:hover .cover{
+    filter: opacity(0.7);
+}
+
+
+
+
+
+
+
 
 .cerchio{
     border-radius: 50%;
@@ -222,6 +283,9 @@ footer img{
    
    
    
+}
+footer a{
+    color: white;
 }
 
 #brano-play{
@@ -252,14 +316,21 @@ footer img{
     display: inline-block;
     width: 400px ;
     height: 2px;
+    position: relative;
 }
 
-.timing{
+#timing{
+    display: flex;
+    align-items: center;
+    
+}
 
-    margin: 0 5px;
+#timing > span {
+    margin: 0 10px;
     color: white;
     font-size: 10px;
 }
+
 
 .barra-volume{
     border: 2px solid grey;
@@ -267,6 +338,28 @@ footer img{
     display: inline-block;
     width: 80px ;
     height: 2px;
+    position: relative;
+}
+.barra-brano > div{
+    width: 80px;
+    height: 2px;
+    border: 2px solid rgb(231, 229, 229);
+    border-radius: 2px;
+    position: absolute;
+    left:-2px;
+    top:-2px;
+    
+}
+
+.barra-volume > div{
+    width: 20px;
+    height: 2px;
+    border: 2px solid rgb(231, 229, 229);
+    border-radius: 2px;
+    position: absolute;
+    left:-2px;
+    top:-2px;
+    
 }
 
 
