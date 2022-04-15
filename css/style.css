@@ -45,7 +45,8 @@ main #menu{
     background-color: #000000;
     width: 200px;
     padding: 0 10px;
-    height: calc( 100vh - 80px);
+    height:calc( 100vh - 80px );
+    z-index: 200;
 }
 #logoxl{
     object-fit: cover;
@@ -89,7 +90,7 @@ main #menu #menu-sx li {
 }
 
 #bottom-menu{
-    height: 180px;
+    min-height: 50px;
 }
 
 
@@ -98,8 +99,8 @@ main #menu #menu-sx li {
             /* playlist */
 
 #playlist{
-    height: 300px;
-    overflow-y: auto;
+    min-height: 100px;
+    overflow-y:hidden;
 }
 
 #playlist-text{
@@ -188,9 +189,9 @@ padding: 5px;
     margin: 20px 0;
     width: 80%;
     display: flex;
-    justify-content: space-around;
-    align-items:center;
-    align-content: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 
 }
 
@@ -270,11 +271,14 @@ padding: 5px;
         /* footer */
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 250px;;
     height: 80px;
     background-color: #282828;
     align-items: center;
+    z-index: 500;
+    
+    
 }
 
 footer img{
@@ -284,7 +288,7 @@ footer img{
    
    
 }
-footer a{
+footer #riproduzione-brani a{
     color: white;
 }
 
@@ -294,6 +298,8 @@ footer a{
     align-content: flex-start;
     align-items: center;
     gap: 18px;
+    margin: 0 10px;
+   
     
 }
 
@@ -302,12 +308,18 @@ footer a{
     
 }
 
+
 #riproduzione-brani {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom:10px;
     font-size: 20px;
    
 
+}
+#riproduzione-brani:hover #ingrandimento-play{
+    scale: 1.8;
 }
 
 .barra-brano{
@@ -336,7 +348,7 @@ footer a{
     border: 2px solid grey;
     border-radius: 2px;
     display: inline-block;
-    width: 80px ;
+    width: 100px ;
     height: 2px;
     position: relative;
 }
@@ -350,9 +362,12 @@ footer a{
     top:-2px;
     
 }
+.barra-brano:hover div{
+    border: 2px solid rgb(11, 213, 11);
+}
 
 .barra-volume > div{
-    width: 20px;
+    width: 40px;
     height: 2px;
     border: 2px solid rgb(231, 229, 229);
     border-radius: 2px;
@@ -360,6 +375,20 @@ footer a{
     left:-2px;
     top:-2px;
     
+}
+.barra-volume:hover div{
+    border: 2px solid rgb(11, 213, 11);
+}
+
+#regolazioni-dx{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+#regolazioni-dx a{
+    color: white;
 }
 
 
