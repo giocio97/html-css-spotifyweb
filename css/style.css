@@ -270,11 +270,11 @@ padding: 5px;
 footer{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    min-height: 80px;
     background-color: #282828;
     align-items: center;
     z-index: 500;
-    flex-wrap: wrap;
+    
     position: relative;
     
     
@@ -399,8 +399,8 @@ footer #riproduzione-brani a{
     }
    
     #contenuto-principale img{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         
     }
 
@@ -423,6 +423,35 @@ footer #riproduzione-brani a{
     }
 
    
+    
+}
+
+@media screen and ( max-width: 568px) {
+   
+   
+    
+    footer{
+        flex-wrap: nowrap;
+        
+        
+    }
+    .barra-brano{
+        width: 100px;
+    }
+    
+    
+    .barra-brano > div{
+        width: 25px;
+    }
+
+    #riproduzione-brani{
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    #regolazioni-dx{
+        flex-wrap: nowrap;
+    }
     
 }
 
