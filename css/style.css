@@ -99,8 +99,8 @@ main #menu #menu-sx li {
             /* playlist */
 
 #playlist{
-    min-height: 100px;
-    overflow-y:auto;
+    height: 80%;
+    scroll-behavior: auto;
 }
 
 #playlist-text{
@@ -212,9 +212,7 @@ padding: 5px;
     
 }
 
-/* #contenuto-principale :hover img{
-    filter: opacity(0.5);
-} */
+
 .cover{
     position: relative;
 }
@@ -251,7 +249,7 @@ padding: 5px;
    
 }
 .brano:hover .cover{
-    filter: opacity(0.7);
+    filter: opacity(0.8);
 }
 
 
@@ -272,12 +270,12 @@ padding: 5px;
 footer{
     display: flex;
     justify-content: space-between;
-    gap: 250px;;
     height: 80px;
     background-color: #282828;
     align-items: center;
     z-index: 500;
     flex-wrap: wrap;
+    position: relative;
     
     
 }
@@ -394,8 +392,37 @@ footer #riproduzione-brani a{
 
 
 /* mediaquery */
+@media screen and ( max-width: 1200px) {
+   
+    body{
+        font-size: 0.8em;
+    }
+   
+    #contenuto-principale img{
+        width: 100px;
+        height: 100px;
+        
+    }
 
+   .brano h4{
+    font-size: 0.7em;
+   }
+   .brano span {
+    font-size: 0.6em;
+   }
 
+    
+    
+    .brano-hover{
+       
+        right: 40px;
+        top: 40px;
+        font-size: 25px;
+        
+        
+    }
 
-
+   
+    
+}
 
