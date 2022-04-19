@@ -53,6 +53,11 @@ main #menu{
     margin: 20px 0;
    
 }
+
+#logosmall{
+    display: none;
+}
+
 main #menu #menu-sx li a {
     
     display: flex;
@@ -169,6 +174,7 @@ padding: 5px;
     margin: 20px;
     font-size: 12px;
     position: fixed;
+    z-index: 600;
     
 }
 
@@ -177,7 +183,7 @@ padding: 5px;
 }
 
 #corpo-centrale{
-    width: calc( 100vw - 200px);
+    width: calc( 100% - 200px);
     
     background-color: #141922;
     overflow-y: auto;
@@ -391,7 +397,7 @@ footer #riproduzione-brani a{
 }
 
 
-/* mediaquery */
+        /* mediaquery */
 @media screen and ( max-width: 1200px) {
    
     body{
@@ -455,3 +461,92 @@ footer #riproduzione-brani a{
     
 }
 
+
+@media screen and ( max-width: 480px) {
+   
+     #intestazione {
+       
+        width: 100%;
+        font-size: 0.9em;
+      }
+
+      
+    
+      main #menu{
+          width: 50px;
+          padding: 2px;
+      }
+      
+      #logoxl{
+        display: none;
+       
+        }
+    
+    #logosmall{
+        width: 30px;
+        height: 30px;
+        margin: 20px 5px;
+        display: block;
+    }
+
+    #home{
+        border-left:none;
+       
+        
+    }
+    
+      #menu-sx  span{
+          display: none;
+      }
+
+
+      #list-play{
+        display: none;
+      }
+      #playlist{
+        display: none;
+      }
+
+
+      #bottom-menu span {
+        display: none;
+      }
+
+      #profilo-utente{
+          border-top: none;
+          padding: 10px;
+      }
+
+      #installer{
+        margin: 0 15px;
+      }
+
+      #corpo-centrale{
+        width: calc( 100vw - 60px);
+      }
+
+    
+      footer{
+        flex-wrap: nowrap;
+        
+        
+    }
+    .barra-brano{
+        width: 100px;
+    }
+    
+    
+    .barra-brano > div{
+        width: 25px;
+    }
+
+    #riproduzione-brani{
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    #regolazioni-dx{
+        flex-wrap: nowrap;
+    }
+    
+}
