@@ -54,7 +54,7 @@ main #menu{
     justify-content:space-between;
     flex-direction: column;
     align-items:flex-start;
-    height: 100%;
+    height: calc( 100% - 20px );
 }
 #logoxl{
     object-fit: cover;
@@ -103,7 +103,7 @@ main #menu #menu-sx li {
 }
 
 #bottom-menu{
-    min-height: 50px;
+    min-height: 20px;
 }
 
 
@@ -112,7 +112,7 @@ main #menu #menu-sx li {
             /* playlist */
 
 #playlist{
-    height: 80%;
+    height: 60%;
     overflow-y: auto;
 }
 
